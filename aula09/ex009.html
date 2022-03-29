@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex009</title>
+    <style>
+        body{
+            background: burlywood;
+            color: black;
+            font: normal 10pt Arial;
+
+        
+        }
+
+    </style>
+</head>
+<body>
+    <h1>aqui vai o resultado</h1>
+    <p>aqui vai o resultado</p>
+    <P>APRENDENDO A USAR O DOM</P>
+    <div>Clique em mim</div>
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write('Está escrito assim '+ p1.innerText)
+        p1.style = 'color: red'
+        corpo.style.background = 'black'
+        document.write(p1.innerHTML)
+    </script>
+</body>
+</html>
